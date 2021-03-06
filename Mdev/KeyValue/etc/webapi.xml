@@ -23,12 +23,12 @@
         </resources>
     </route>
     <!-- keyValue Delete item By code -->
-    <!-- keyValue Delete item By code -->
+    <!-- keyValue Add item -->
     <route url="/V1/keyvalue" method="POST">
         <service class="Mdev\KeyValue\Api\KeyVaueManagementInterface" method="addkeyValue"/>
         <resources>
             <resource ref="anonymous" />
         </resources>
     </route>
-    <!-- keyValue Delete item By code -->
+    <!-- keyValue add item -->
 </routes>
