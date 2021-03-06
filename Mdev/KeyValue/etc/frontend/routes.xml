@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Mdev
+ * @package    Mdev_KeyValue
+ * @author     Mohit SIngh
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="keyvalue" frontName="keyvalue">
+            <module name="Mdev_KeyValue" />
+        </route>
+    </router>
+</config>

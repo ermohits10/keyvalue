@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="GET" url="/V1/keyvalue">
+		<service class="Mdev\KeyValue\Api\KeyVaueManagementInterface" method="getKeyValueList"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+
+	 <!-- keyValue List By code -->
+    <route url="/V1/keyvalue/:code" method="GET">
+        <service class="Mdev\KeyValue\Api\KeyVaueManagementInterface" method="getkeyValueByCode"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <!-- keyValue List By code -->
+     <!-- keyValue Delete item By code -->
+    <route url="/V1/keyvalue/:code" method="DELETE">
+        <service class="Mdev\KeyValue\Api\KeyVaueManagementInterface" method="deleteKeyValueItem"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <!-- keyValue Delete item By code -->
+    <!-- keyValue Delete item By code -->
+    <route url="/V1/keyvalue" method="POST">
+        <service class="Mdev\KeyValue\Api\KeyVaueManagementInterface" method="addkeyValue"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <!-- keyValue Delete item By code -->
+</routes>

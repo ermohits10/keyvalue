@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Mdev
+ * @package    Mdev_KeyValue
+ * @author     Mohit SIngh
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="mdev_keyvalue::keyvalue" title="KeyValue" module="Mdev_KeyValue" sortOrder="90" parent="Magento_Backend::content" action="mdev_keyvalue/items/" resource="Mdev_KeyValue::items"/>
+    </menu>
+</config>
