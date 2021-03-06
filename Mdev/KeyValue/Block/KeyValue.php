@@ -21,7 +21,7 @@ class KeyValue extends \Magento\Framework\View\Element\Template
 
     public function _prepareLayout()
     {
-        $this->pageConfig->getTitle()->set(__('Mdev KeyValue Module'));
+        $this->pageConfig->getTitle()->set(__('Mdev KeyValue'));
         
         return parent::_prepareLayout();
     }
